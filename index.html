@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+            user-scalable=no">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+</head>
+
+<body>
+  <h1>仮想 → 物理キャンバス（ドラッグで移動、ホイールで周期変更）</h1>
+
+  <!-- 表示用キャンバス（物理画面） -->
+  <canvas id="view" width="800" height="400" style="border:1px solid #000;"></canvas>
+
+  <!-- 仮想キャンバス（画面には見せない） -->
+  <canvas id="offscreen" width="4000" height="400" style="display:none;"></canvas>
+
+  <!-- 外部 Python ファイル main.py を実行 -->
+  <script type="py" src="main.py"></script>
+</body>
+</html>
