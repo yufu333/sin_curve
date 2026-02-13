@@ -1,0 +1,2 @@
+# sin_curve
+SINカーブ
